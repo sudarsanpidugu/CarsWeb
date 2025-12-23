@@ -2,509 +2,763 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ListingHub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ListingHub</title>
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
 
-    <div class="main-landing">
-        <header class="navbar" id="navbar">
-            <div class="nav-left">
-                <div class="logo">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>ListingHub</span>
-                </div>
+  <div class="main-landing">
+    <header class="navbar" id="navbar">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="/assets/images/logo/img.png" alt="AutoStore Logo" />
+          <span>AutoStore</span>
+        </div>
 
-                <ul class="menu">
-                    <li>Home </li>
-                    <li>Listings </li>
-                    <li>User Dashboard </li>
-                    <li>Pages</li>
-                </ul>
-            </div>
 
-            <div class="nav-right">
-                <div class="account">
-                    <i class="fa-regular fa-user"></i>
-                    <span>SignUp Or SignIn</span>
-                </div>
+        <ul class="menu">
+          <li>Home </li>
+          <li>Listings </li>
+          <li>User Dashboard </li>
+          <li>Pages</li>
+        </ul>
+      </div>
 
-                <div class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="badge">3</span>
-                </div>
+      <div class="nav-right">
+        <div class="account">
+          <i class="fa-regular fa-user"></i>
+          <span>SignUp Or SignIn</span>
+        </div>
 
-                <button class="add-btn">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Add Listing
-                </button>
-            </div>
-        </header>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge">3</span>
+        </div>
 
-        <section class="hero">
-            <div class="hero-left">
-                <h1>
-                    Explore Your Nearest Places<br>
-                    <span>To Stay</span>
-                </h1>
+        <button class="add-btn">
+          <i class="fa-solid fa-location-dot"></i>
+          Add Listing
+        </button>
+      </div>
+    </header>
 
-                <p>
-                    Take a little break from the work stress of everyday.
-                    Discover plan trip and explore beautiful destinations.
-                </p>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>
+          Explore Your Nearest Places<br>
+          <span>To Stay</span>
+        </h1>
 
-                <div class="search-box">
-                    <div class="field">
-                        <span>Find</span>
-                        <input type="text" placeholder="What are you looking for?" />
-                    </div>
+        <p>
+          Take a little break from the work stress of everyday.
+          Discover plan trip and explore beautiful destinations.
+        </p>
 
-                    <div class="divider"></div>
+        <div class="search-box">
+          <div class="field">
+            <span>Find</span>
+            <input type="text" placeholder="What are you looking for?" />
+          </div>
 
-                    <div class="field">
-                        <span>Where</span>
-                        <input type="text" placeholder="Location" />
-                    </div>
+          <div class="divider"></div>
 
-                    <button class="search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i> Search
-                    </button>
-                </div>
-            </div>
+          <div class="field">
+            <span>Where</span>
+            <input type="text" placeholder="Location" />
+          </div>
 
-            <div class="hero-right">
-                <div class="img-big">
-                    <img src="/assets/images/home/banner1.jpg">
-                </div>
-                <div class="img-small">
-                    <img src="/assets/images/home/banner2.webp">
-                </div>
-            </div>
-        </section>
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="img-big">
+          <img src="/assets/images/home/banner1.jpg">
+        </div>
+        <div class="img-small">
+          <img src="/assets/images/home/banner2.webp">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="featured-listing">
+    <div class="featured-heading">
+      <h2>
+        <span class="highlight">Featured Listing</span> In
+        <span class="location">Las Vegas</span>
+      </h2>
+      <p>Explore Hot & Popular Business Listings</p>
     </div>
 
-    <section class="featured-listing">
-        <div class="featured-heading">
-            <h2>
-                <span class="highlight">Featured Listing</span> In
-                <span class="location">Las Vegas</span>
-            </h2>
-            <p>Explore Hot & Popular Business Listings</p>
+    <div class="carousel-viewport">
+      <div class="carousel-track js-carousel">
+
+        <div class="listing-card">
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
+
+            <div class="badges">
+              <span class="status open"><i class="fa-solid fa-door-open"></i> Open</span>
+              <span class="price"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
+                  class="fa-solid fa-dollar-sign"></i></span>
+              <span class="featured"><i class="fa-solid fa-star"></i> Featured</span>
+            </div>
+
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+
+            <div class="overlay">
+              <div class="avatar">
+                <img src="https://i.pravatar.cc/100?img=11" />
+              </div>
+
+              <div class="details">
+                <h4>
+                  The Big Bumble Gym
+                  <span class="verified"><i class="fa-solid fa-circle-check"></i></span>
+                </h4>
+                <p><i class="fa-solid fa-location-dot"></i> Jakarta, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +42 515 635 2635</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="category">
+              <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
+              Health & Fitness
+            </div>
+
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <small>(42 Reviews)</small>
+            </div>
+          </div>
         </div>
 
-        <div class="carousel-viewport">
-            <div class="carousel-track" id="carousel">
+        <div class="listing-card">
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
 
-                <div class="listing-card">
-
-                    <div class="image-box">
-                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
-                            alt="The Big Bumble Gym" />
-
-                        <!-- TOP LEFT BADGES -->
-                        <div class="badges">
-                            <span class="status open">OPEN</span>
-                            <span class="price">$$$</span>
-                            <span class="featured">
-                                <i>☆</i> Featured
-                            </span>
-                        </div>
-
-                        <!-- TOP RIGHT HEART -->
-                        <div class="wishlist">♡</div>
-
-                        <!-- BOTTOM OVERLAY -->
-                        <div class="overlay">
-                            <div class="avatar">
-                                <img src="https://i.pravatar.cc/100?img=11" />
-                            </div>
-
-                            <div class="details">
-                                <h4>
-                                    The Big Bumble Gym
-                                    <span class="verified">✔</span>
-                                </h4>
-                                <p>📍 Jakarta, USA</p>
-                                <p>📞 +42 515 635 2635</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FOOTER -->
-                    <div class="footer">
-                        <div class="category">
-                            <span class="icon">🏋️</span>
-                            Health & Fitness
-                        </div>
-
-                        <div class="rating">
-                            ★★★★★ <small>(42 Reviews)</small>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="listing-card">
-
-                    <div class="image-box">
-                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
-                            alt="The Big Bumble Gym" />
-
-                        <!-- TOP LEFT BADGES -->
-                        <div class="badges">
-                            <span class="status open">OPEN</span>
-                            <span class="price">$$$</span>
-                            <span class="featured">
-                                <i>☆</i> Featured
-                            </span>
-                        </div>
-
-                        <!-- TOP RIGHT HEART -->
-                        <div class="wishlist">♡</div>
-
-                        <!-- BOTTOM OVERLAY -->
-                        <div class="overlay">
-                            <div class="avatar">
-                                <img src="https://i.pravatar.cc/100?img=11" />
-                            </div>
-
-                            <div class="details">
-                                <h4>
-                                    The Big Bumble Gym
-                                    <span class="verified">✔</span>
-                                </h4>
-                                <p>📍 Jakarta, USA</p>
-                                <p>📞 +42 515 635 2635</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FOOTER -->
-                    <div class="footer">
-                        <div class="category">
-                            <span class="icon">🏋️</span>
-                            Health & Fitness
-                        </div>
-
-                        <div class="rating">
-                            ★★★★★ <small>(42 Reviews)</small>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="listing-card">
-
-                    <div class="image-box">
-                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
-                            alt="The Big Bumble Gym" />
-
-                        <!-- TOP LEFT BADGES -->
-                        <div class="badges">
-                            <span class="status open">OPEN</span>
-                            <span class="price">$$$</span>
-                            <span class="featured">
-                                <i>☆</i> Featured
-                            </span>
-                        </div>
-
-                        <!-- TOP RIGHT HEART -->
-                        <div class="wishlist">♡</div>
-
-                        <!-- BOTTOM OVERLAY -->
-                        <div class="overlay">
-                            <div class="avatar">
-                                <img src="https://i.pravatar.cc/100?img=11" />
-                            </div>
-
-                            <div class="details">
-                                <h4>
-                                    The Big Bumble Gym
-                                    <span class="verified">✔</span>
-                                </h4>
-                                <p>📍 Jakarta, USA</p>
-                                <p>📞 +42 515 635 2635</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FOOTER -->
-                    <div class="footer">
-                        <div class="category">
-                            <span class="icon">🏋️</span>
-                            Health & Fitness
-                        </div>
-
-                        <div class="rating">
-                            ★★★★★ <small>(42 Reviews)</small>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="listing-card">
-
-                    <div class="image-box">
-                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
-                            alt="The Big Bumble Gym" />
-
-                        <!-- TOP LEFT BADGES -->
-                        <div class="badges">
-                            <span class="status open">OPEN</span>
-                            <span class="price">$$$</span>
-                            <span class="featured">
-                                <i>☆</i> Featured
-                            </span>
-                        </div>
-
-                        <!-- TOP RIGHT HEART -->
-                        <div class="wishlist">♡</div>
-
-                        <!-- BOTTOM OVERLAY -->
-                        <div class="overlay">
-                            <div class="avatar">
-                                <img src="https://i.pravatar.cc/100?img=11" />
-                            </div>
-
-                            <div class="details">
-                                <h4>
-                                    The Big Bumble Gym
-                                    <span class="verified">✔</span>
-                                </h4>
-                                <p>📍 Jakarta, USA</p>
-                                <p>📞 +42 515 635 2635</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FOOTER -->
-                    <div class="footer">
-                        <div class="category">
-                            <span class="icon">🏋️</span>
-                            Health & Fitness
-                        </div>
-
-                        <div class="rating">
-                            ★★★★★ <small>(42 Reviews)</small>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="badges">
+              <span class="status open"><i class="fa-solid fa-door-open"></i> Open</span>
+              <span class="price"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></span>
+              <span class="featured"><i class="fa-solid fa-star"></i> Featured</span>
             </div>
-        </div>
-    </section>
 
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
 
-    <section class="car-categories">
-        <div class="category-heading">
-            <h2>
-                Hot & Trending <span>Car Categories</span>
-            </h2>
-            <p>Explore popular automobile categories to list or discover services</p>
+            <div class="overlay">
+              <div class="avatar">
+                <img src="https://i.pravatar.cc/100?img=12" />
+              </div>
+
+              <div class="details">
+                <h4>
+                  Power Zone Gym
+                  <span class="verified"><i class="fa-solid fa-circle-check"></i></span>
+                </h4>
+                <p><i class="fa-solid fa-location-dot"></i> Nevada, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9988 554433</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="category">
+              <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
+              Fitness Club
+            </div>
+
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <small>(31 Reviews)</small>
+            </div>
+          </div>
         </div>
 
-        <div class="category-grid">
-            <div class="category-card">
-                <div class="icon">
-                    🚗
-                </div>
-                <h4>Car Dealers</h4>
-                <span>48 Listings</span>
+        <div class="listing-card">
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
+
+            <div class="badges">
+              <span class="status open"><i class="fa-solid fa-door-open"></i> Open</span>
+              <span class="price"><i class="fa-solid fa-dollar-sign"></i></span>
+              <span class="featured"><i class="fa-solid fa-star"></i> Featured</span>
             </div>
 
-            <div class="category-card">
-                <div class="icon">
-                    🛠️
-                </div>
-                <h4>Car Service & Repair</h4>
-                <span>62 Listings</span>
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+
+            <div class="overlay">
+              <div class="avatar">
+                <img src="https://i.pravatar.cc/100?img=13" />
+              </div>
+
+              <div class="details">
+                <h4>
+                  Fit Life Studio
+                  <span class="verified"><i class="fa-solid fa-circle-check"></i></span>
+                </h4>
+                <p><i class="fa-solid fa-location-dot"></i> Vegas, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +44 777 888 999</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="category">
+              <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
+              Gym & Yoga
             </div>
 
-            <div class="category-card">
-                <div class="icon">
-                    ⛽
-                </div>
-                <h4>Fuel Stations</h4>
-                <span>35 Listings</span>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <small>(19 Reviews)</small>
             </div>
-
-            <div class="category-card">
-                <div class="icon">
-                    🧽
-                </div>
-                <h4>Car Wash & Detailing</h4>
-                <span>41 Listings</span>
-            </div>
+          </div>
         </div>
-    </section>
 
-    <section class="trending-listings">
-        <div class="section-heading">
-            <h2>
-                Trending & Popular <span>Listings</span>
-            </h2>
-            <p>Explore Hot & Popular Business Listings</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="car-categories">
+    <div class="category-heading">
+      <h2>Hot & Trending <span>Car Categories</span></h2>
+      <p>Explore popular automobile categories to list or discover services</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track js-carousel">
+
+        <div class="category-card">
+          <div class="icon">🛠️</div>
+          <h4>Car Service & Repair</h4>
+          <span>62 Listings</span>
         </div>
 
-        <div class="listing-grid">
-            <!-- CARD 1 -->
-            <div class="listing-card">
-                <div class="image-box">
-                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" />
-                    <div class="badges">
-                        <span class="open">OPEN</span>
-                        <span class="price">$$$</span>
-                        <span class="featured">
-                            <i class="fa-regular fa-star"></i> Featured
-                        </span>
-                    </div>
-                    <div class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div class="author">
-                        <img src="https://i.pravatar.cc/100?img=12" />
-                        <h4>
-                            Agroo Spa & Massage Center
-                            <i class="fa-solid fa-circle-check"></i>
-                        </h4>
-                    </div>
-
-                    <p class="desc">
-                        Cicero famously orated against his political.
-                    </p>
-
-                    <div class="meta">
-                        <span>
-                            <i class="fa-solid fa-phone"></i> +42 515 635 2136
-                        </span>
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i> 1.2 miles
-                        </span>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <div class="category">
-                        <i class="fa-solid fa-spa"></i> Spa & Beauty
-                    </div>
-                    <div class="rating green">
-                        4.7 <small>76 Reviews</small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="listing-card">
-                <div class="image-box">
-                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" />
-                    <div class="badges">
-                        <span class="open">OPEN</span>
-                        <span class="price">$$$</span>
-                        <span class="featured">
-                            <i class="fa-regular fa-star"></i> Featured
-                        </span>
-                    </div>
-                    <div class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div class="author">
-                        <img src="https://i.pravatar.cc/100?img=11" />
-                        <h4>
-                            The Big Bumble Gym
-                            <i class="fa-solid fa-circle-check"></i>
-                        </h4>
-                    </div>
-
-                    <p class="desc">
-                        Cicero famously orated against his political.
-                    </p>
-
-                    <div class="meta">
-                        <span>
-                            <i class="fa-solid fa-phone"></i> +42 515 635 4758
-                        </span>
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i> 2.4 miles
-                        </span>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <div class="category">
-                        <i class="fa-solid fa-dumbbell"></i> Fitness
-                    </div>
-                    <div class="rating green">
-                        4.5 <small>46 Reviews</small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="listing-card">
-                <div class="image-box">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
-                    <div class="badges">
-                        <span class="open">OPEN</span>
-                        <span class="price">$$$$</span>
-                    </div>
-                    <div class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div class="author">
-                        <img src="https://i.pravatar.cc/100?img=16" />
-                        <h4>
-                            Greenvally Real Estate
-                            <i class="fa-solid fa-circle-check"></i>
-                        </h4>
-                    </div>
-
-                    <p class="desc">
-                        Cicero famously orated against his political.
-                    </p>
-
-                    <div class="meta">
-                        <span>
-                            <i class="fa-solid fa-phone"></i> +42 515 635 6150
-                        </span>
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i> 3.7 miles
-                        </span>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <div class="category">
-                        <i class="fa-solid fa-house"></i> Real Estate
-                    </div>
-                    <div class="rating yellow">
-                        4.3 <small>35 Reviews</small>
-                    </div>
-                </div>
-            </div>
+        <div class="category-card">
+          <div class="icon">⛽</div>
+          <h4>Fuel Stations</h4>
+          <span>35 Listings</span>
         </div>
-    </section>
+
+        <div class="category-card">
+          <div class="icon">🧽</div>
+          <h4>Car Wash & Detailing</h4>
+          <span>41 Listings</span>
+        </div>
+
+        <div class="category-card">
+          <div class="icon">🅿️</div>
+          <h4>Parking Services</h4>
+          <span>28 Listings</span>
+        </div>
+
+        <div class="category-card">
+          <div class="icon">🔋</div>
+          <h4>EV Charging Stations</h4>
+          <span>19 Listings</span>
+        </div>
+
+        <div class="category-card">
+          <div class="icon">🛞</div>
+          <h4>Tyre & Accessories</h4>
+          <span>54 Listings</span>
+        </div>
+
+        <div class="category-card">
+          <div class="icon">🚘</div>
+          <h4>Car Rentals</h4>
+          <span>33 Listings</span>
+        </div>
+
+        <div class="category-card">
+          <div class="icon">🧰</div>
+          <h4>Spare Parts Shops</h4>
+          <span>46 Listings</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trending-listings">
+    <div class="section-heading">
+      <h2>
+        Trending & Popular <span>Listings</span>
+      </h2>
+      <p>Explore Hot & Popular Business Listings</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="listing-grid js-carousel">
+
+
+        <div class="listing-card">
+
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" />
+
+            <div class="badges">
+              <span class="open">OPEN</span>
+              <span class="price">$$$</span>
+              <span class="featured">
+                <i class="fa-regular fa-star"></i> Featured
+              </span>
+            </div>
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="profile">
+            <img src="https://i.pravatar.cc/100?img=12" />
+          </div>
+
+          <div class="content">
+            <h4 class="title">
+              Agroo Spa & Massage Center
+              <i class="fa-solid fa-circle-check"></i>
+            </h4>
+
+            <p class="desc">
+              Cicero famously orated against his political.
+            </p>
+
+            <div class="meta">
+              <span>
+                <i class="fa-solid fa-phone"></i> +42 515 635 2136
+              </span>
+              <span>
+                <i class="fa-solid fa-location-dot"></i> 1.2 miles
+              </span>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="category">
+              <i class="fa-solid fa-spa"></i> Spa & Beauty
+            </div>
+            <div class="rating green">
+              4.7 <small>76 Reviews</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="listing-card">
+
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" />
+
+            <div class="badges">
+              <span class="open">OPEN</span>
+              <span class="price">$$$</span>
+              <span class="featured">
+                <i class="fa-regular fa-star"></i> Featured
+              </span>
+            </div>
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="profile">
+            <img src="https://i.pravatar.cc/100?img=12" />
+          </div>
+
+          <div class="content">
+            <h4 class="title">
+              Agroo Spa & Massage Center
+              <i class="fa-solid fa-circle-check"></i>
+            </h4>
+
+            <p class="desc">
+              Cicero famously orated against his political.
+            </p>
+
+            <div class="meta">
+              <span>
+                <i class="fa-solid fa-phone"></i> +42 515 635 2136
+              </span>
+              <span>
+                <i class="fa-solid fa-location-dot"></i> 1.2 miles
+              </span>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="category">
+              <i class="fa-solid fa-spa"></i> Spa & Beauty
+            </div>
+            <div class="rating green">
+              4.7 <small>76 Reviews</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="listing-card">
+
+          <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" />
+
+            <div class="badges">
+              <span class="open">OPEN</span>
+              <span class="price">$$$</span>
+              <span class="featured">
+                <i class="fa-regular fa-star"></i> Featured
+              </span>
+            </div>
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="profile">
+            <img src="https://i.pravatar.cc/100?img=12" />
+          </div>
+
+          <div class="content">
+            <h4 class="title">
+              Agroo Spa & Massage Center
+              <i class="fa-solid fa-circle-check"></i>
+            </h4>
+
+            <p class="desc">
+              Cicero famously orated against his political.
+            </p>
+
+            <div class="meta">
+              <span>
+                <i class="fa-solid fa-phone"></i> +42 515 635 2136
+              </span>
+              <span>
+                <i class="fa-solid fa-location-dot"></i> 1.2 miles
+              </span>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="category">
+              <i class="fa-solid fa-spa"></i> Spa & Beauty
+            </div>
+            <div class="rating green">
+              4.7 <small>76 Reviews</small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="reviews-section">
+    <div class="reviews-heading">
+      <h2>Our Great <span>Reviews</span></h2>
+      <p>Our clients love our car services and give great & positive reviews</p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- Card 1 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <h4>"One of the Superb Car Platforms"</h4>
+        <p>
+          I absolutely love using this platform whenever I’m searching for
+          car services or dealerships. Everything is reliable and well listed.
+        </p>
+        <span class="pointer"></span>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <h4>"Highly Trusted Auto Service"</h4>
+        <p>
+          Overall, this platform is a powerful tool for anyone in the automobile
+          market. Smooth experience with genuine car listings.
+        </p>
+        <span class="pointer"></span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <h4>"Best Car Marketplace"</h4>
+        <p>
+          I uploaded my car requirements and instantly got genuine dealer calls.
+          It’s much more legit than other car sites.
+        </p>
+        <span class="pointer"></span>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <h4>"Safe & Reliable Platform"</h4>
+        <p>
+          This platform protects users from fake dealers and spam calls.
+          Only verified automobile service providers reach out.
+        </p>
+        <span class="pointer"></span>
+      </div>
+
+    </div>
+
+    <!-- Users -->
+    <div class="review-users">
+      <div class="user">
+        <img src="https://i.pravatar.cc/100?img=11">
+        <h5>Aman Diwakar</h5>
+        <span>Car Dealer</span>
+      </div>
+
+      <div class="user">
+        <img src="https://i.pravatar.cc/100?img=32">
+        <h5>Ridhika K. Sweta</h5>
+        <span>Auto Consultant</span>
+      </div>
+
+      <div class="user">
+        <img src="https://i.pravatar.cc/100?img=45">
+        <h5>Shushil Kumar Yadav</h5>
+        <span>Brand Manager</span>
+      </div>
+
+      <div class="user">
+        <img src="https://i.pravatar.cc/100?img=48">
+        <h5>Ritika K. Mishra</h5>
+        <span>HR – Auto Firm</span>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="latest-news">
+    <div class="news-heading">
+      <h2>Latest Updates <span>News</span></h2>
+      <p>Get the latest trends, tips & updates from the automobile world</p>
+    </div>
+
+    <div class="news-grid">
+
+      <!-- Card 1 -->
+      <div class="news-card">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Car News">
+        </div>
+
+        <div class="content">
+          <h3>Top 10 Cars to Buy in 2025 for Indian Roads</h3>
+
+          <p>
+            Explore the most reliable, fuel-efficient and budget-friendly cars
+            that are perfect for Indian driving conditions.
+          </p>
+
+          <a href="#" class="read-more">Continue Reading</a>
+        </div>
+
+        <div class="meta">
+          <span>
+            <i class="fa-regular fa-calendar"></i> 13th Sept 2025
+          </span>
+          <span>
+            <i class="fa-regular fa-eye"></i> 12k Views
+          </span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="news-card">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753" alt="Car Service">
+        </div>
+
+        <div class="content">
+          <h3>Essential Car Maintenance Tips Every Owner Should Know</h3>
+
+          <p>
+            From engine care to tyre safety, learn the most important maintenance
+            tips to keep your car running smoothly.
+          </p>
+
+          <a href="#" class="read-more">Continue Reading</a>
+        </div>
+
+        <div class="meta">
+          <span>
+            <i class="fa-regular fa-calendar"></i> 29th Nov 2025
+          </span>
+          <span>
+            <i class="fa-regular fa-eye"></i> 33k Views
+          </span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="news-card">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="Electric Cars">
+        </div>
+
+        <div class="content">
+          <h3>Electric Cars in India: Future of Smart Mobility</h3>
+
+          <p>
+            Discover how electric vehicles are shaping the future of
+            eco-friendly transportation in India.
+          </p>
+
+          <a href="#" class="read-more">Continue Reading</a>
+        </div>
+
+        <div class="meta">
+          <span>
+            <i class="fa-regular fa-calendar"></i> 13th March 2025
+          </span>
+          <span>
+            <i class="fa-regular fa-eye"></i> 15k Views
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
 
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <div class="text">
+        <h3>Subscribe Our Newsletter!</h3>
+        <p>Subscribe for latest car listings, offers & automobile updates</p>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email Here..." />
+        <button type="submit">
+          <i class="fa-regular fa-paper-plane"></i> Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo & About -->
+      <div class="footer-col brand">
+        <div class="logo">
+          <img src="/assets/images/logo/img.png" alt="AutoStore Logo" />
+          <span>AutoStore</span>
+        </div>
+        <p class="copyright">
+          © 2025 AutoStore. Develop with ❤️ by Shreethemes
+        </p>
+
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="#">About ListingHub</a></li>
+          <li><a href="#">Submit Car Listing</a></li>
+          <li><a href="#">ListingHub Report</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Getting Started -->
+      <div class="footer-col">
+        <h4>Getting Started</h4>
+        <ul>
+          <li><a href="#">Trust & Safety</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Terms of Services</a></li>
+          <li><a href="#">Paid Advertising</a></li>
+          <li><a href="#">Car Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Business -->
+      <div class="footer-col">
+        <h4>ListingHub Business</h4>
+        <ul>
+          <li><a href="#">Trust & Safety</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Terms of Services</a></li>
+          <li><a href="#">Paid Advertising</a></li>
+          <li><a href="#">Dealer Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col contact">
+        <h4>Get in Touch</h4>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Angraster 7, Greenhorst<br />
+          Los Angeles GTC564
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          042 - 526 - 5263<br />
+          <small>Mon - Sat 10am - 6pm</small>
+        </p>
+      </div>
+
+    </div>
+  </footer>
 
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
