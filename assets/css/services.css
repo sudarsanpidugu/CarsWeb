@@ -1,0 +1,290 @@
+:root {
+  --navbar-height: 80px;
+}
+
+/* ================= SECTION ================= */
+.listing-map-section {
+  height: calc(100vh - var(--navbar-height));
+  margin-top: var(--navbar-height);
+  overflow: hidden;
+  background: #fff;
+
+  .container-fluid {
+    height: 100%;
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  /* ================= LEFT SIDE ================= */
+  .listing-side {
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+
+    .listing-scroll {
+      height: 100%;
+      overflow-y: auto;
+      padding: 24px;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+      }
+    }
+  }
+
+  /* ================= SEARCH PANEL ================= */
+  .search-panel {
+    margin-bottom: 24px;
+
+    .input-box {
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: #94a3b8;
+        z-index: 2;
+      }
+
+      input {
+        padding-left: 38px;
+        height: 46px;
+        font-size: 14px;
+      }
+    }
+
+    .btn {
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 999px;
+    }
+  }
+
+  /* ================= RESULT BAR ================= */
+  .result-bar {
+    margin-bottom: 24px;
+    font-weight: 600;
+
+    .btn {
+      font-size: 13px;
+      border-radius: 999px;
+    }
+  }
+
+  /* ================= CARD ================= */
+  .listing-card {
+    position: relative;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.35s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 22px rgba(15, 23, 42, 0.15);
+    }
+
+    /* IMAGE */
+    .image-box {
+      position: relative;
+      height: 190px;
+      border-radius: 18px 18px 0 0;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .badges {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        display: flex;
+        gap: 8px;
+        z-index: 2;
+
+        span {
+          padding: 6px 12px;
+          font-size: 12px;
+          font-weight: 600;
+          border-radius: 999px;
+          color: #fff;
+        }
+
+        .open {
+          background: #22c55e;
+        }
+
+        .price {
+          background: rgba(0, 0, 0, 0.45);
+        }
+      }
+
+      .wishlist {
+        position: absolute;
+        right: 14px;
+        bottom: 14px;
+        width: 36px;
+        height: 36px;
+        background: #fff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        z-index: 2;
+
+        i {
+          color: #ef4444;
+        }
+      }
+    }
+
+    /* PROFILE (OUTSIDE CARD) */
+    .profile {
+      position: absolute;
+      left: 20px;
+      top: 165px;
+      z-index: 5;
+
+      img {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        background: #fff;
+      }
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 36px 18px 18px;
+
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        gap: 6px;
+
+        .verified {
+          color: #22c55e;
+          font-size: 14px;
+        }
+      }
+
+      .desc {
+        margin: 10px 0 14px;
+        font-size: 14px;
+        color: #64748b;
+        line-height: 1.6;
+      }
+
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        span {
+          display: flex;
+          align-items: center;
+        }
+
+        i {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          margin-right: 6px;
+          font-size: 13px;
+        }
+
+        .phone {
+          background: #e0f2fe;
+          color: #0284c7;
+        }
+
+        .location {
+          background: #fee2e2;
+          color: #dc2626;
+        }
+      }
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: auto;
+      padding: 14px 18px;
+      border-top: 1px solid #e5e7eb;
+      background: #f8fafc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .category {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+
+        .cat-icon {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background: #f3e8ff;
+          display: grid;
+          place-items: center;
+          color: #7c3aed;
+        }
+      }
+
+      .rating {
+        font-weight: 700;
+        color: #22c55e;
+
+        small {
+          font-weight: 400;
+          color: #64748b;
+        }
+      }
+    }
+  }
+
+  /* ================= MAP ================= */
+  .map-side {
+    position: sticky;
+    top: var(--navbar-height);
+    height: calc(100vh - var(--navbar-height));
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 991px) {
+    height: auto;
+    margin-top: 0;
+
+    .map-side {
+      position: relative;
+      height: 350px;
+      top: 0;
+    }
+  }
+}
