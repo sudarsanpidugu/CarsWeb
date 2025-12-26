@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>VisualPython</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="/assets/css/style.css" rel="stylesheet"> <!-- Link to the separate CSS file -->
+  <link href="/assets/css/global.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="login-container">
+    <section class="login-section">
+      <div class="login-card">
+
+        <!-- CLOSE -->
+        <a href="/" class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+
+        <!-- HEADER -->
+        <div class="login-header">
+          <img src="/assets/images/logo/car.png" />
+          <h2>Create Account</h2>
+          <p>Register to continue</p>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <form class="login-form">
+
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="First name">
+          </div>
+
+          <div class="form-group">
+            <label>Mobile Number</label>
+            <div class="input-box">
+              <span class="country-code">+91</span>
+              <input type="tel" maxlength="10" placeholder="Mobile number">
+            </div>
+          </div>
+
+
+          <button type="button" class="login-btn" onclick="openOtp()">
+            Register
+          </button>
+
+          <p class="signup-text">
+            Already have an account?
+            <a href="/login.html">Login</a>
+          </p>
+
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- OTP POPUP -->
+  <div class="otp-overlay">
+    <div class="otp-card">
+      <h3>OTP Verification</h3>
+      <p>Enter the 6-digit OTP sent to your mobile</p>
+
+      <div class="otp-inputs">
+        <input maxlength="1">
+        <input maxlength="1">
+        <input maxlength="1">
+        <input maxlength="1">
+        <input maxlength="1">
+        <input maxlength="1">
+      </div>
+
+      <a href="/" class="login-btn">Verify OTP</a>
+    </div>
+  </div>
+
+
+
+  <script src="/script.js"></script>
+</body>
+
+</html>

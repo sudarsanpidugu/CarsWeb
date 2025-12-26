@@ -20,7 +20,7 @@
 
   <div class="main-landing">
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="navbar">
-      <div class="container">
+      <div class="container-fluid ">
 
         <!-- LEFT : LOGO -->
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -91,135 +91,433 @@
       </div>
     </div>
 
+    <section class="listing-map-section">
 
-  </div>
+    <div class="container-fluid h-100">
+      <div class="row h-100 g-0">
 
-<section class="listing-map-section">
+        <!-- LEFT SIDE (SCROLLABLE) -->
+        <div class="col-lg-7 listing-side">
 
-  <div class="container-fluid h-100">
-    <div class="row h-100 g-0">
+          <div class="listing-scroll">
 
-      <!-- LEFT SIDE (SCROLLABLE) -->
-      <div class="col-lg-7 listing-side">
+            <!-- SEARCH PANEL -->
+            <div class="search-panel mb-4">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="form-control" placeholder="What you are looking for ?">
+                  </div>
+                </div>
 
-        <div class="listing-scroll">
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" class="form-control" placeholder="Type location">
+                  </div>
+                </div>
 
-          <!-- SEARCH PANEL -->
-          <div class="search-panel mb-4">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <div class="input-box">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <input type="text" class="form-control" placeholder="What you are looking for ?">
+                <div class="col-12">
+                  <div class="input-box">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="text" class="form-control" placeholder="Choose A Date">
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-6">
-                <div class="input-box">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <input type="text" class="form-control" placeholder="Type location">
-                </div>
+              <div class="filter-bar d-flex flex-wrap gap-2 mt-3 position-relative">
+                <button class="filter-btn" data-filter="categories">
+                  Categories
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <button class="filter-btn" data-filter="rating">
+                  Rating Filter
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <button class="filter-btn" data-filter="price">
+                  Price Filter
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <button class="filter-btn" data-filter="distance">
+                  Distance
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <button class="filter-btn" data-filter="more">
+                  More Filter
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
               </div>
 
-              <div class="col-12">
-                <div class="input-box">
-                  <i class="fa-regular fa-calendar"></i>
-                  <input type="text" class="form-control" placeholder="Choose A Date">
+              <div class="filter-panels">
+
+                <!-- Categories -->
+                <div class="filter-panel show" id="categories">
+                  <div class="grid-3">
+                    <label><input type="checkbox"> Eat & Drink</label>
+                    <label><input type="checkbox"> Apartments</label>
+                    <label><input type="checkbox"> Classified</label>
+                    <label><input type="checkbox"> Services</label>
+                    <label><input type="checkbox"> Gym & Fitness</label>
+                    <label><input type="checkbox"> Night Life</label>
+                    <label><input type="checkbox"> Coaching</label>
+                    <label><input type="checkbox"> Shopping</label>
+                  </div>
+                </div>
+
+                <!-- Rating -->
+                <div class="filter-panel" id="rating">
+                  <div class="rating-group">
+                    <button class="rating active">⭐ All</button>
+                    <button class="rating">⭐ 3.0+</button>
+                    <button class="rating">⭐ 4.0+</button>
+                    <button class="rating">⭐ 4.5+</button>
+                    <button class="rating">⭐ 5.0</button>
+                  </div>
+                </div>
+
+                <!-- Price -->
+                <div class="filter-panel" id="price">
+                  <h6>Price Range in $ USD</h6>
+
+                  <div class="range-values">
+                    <span id="minPrice">$50</span>
+                    <span id="maxPrice">$250</span>
+                  </div>
+
+                  <div class="range-wrapper">
+                    <input type="range" min="0" max="500" value="50" id="priceMin">
+                    <input type="range" min="0" max="500" value="250" id="priceMax">
+                    <div class="range-track"></div>
+                  </div>
+                </div>
+
+
+                <!-- Distance -->
+                <div class="filter-panel" id="distance">
+                  <h6>Distance Filter Show in Km</h6>
+
+                  <div class="range-values center">
+                    <span id="distanceValue">120 km</span>
+                  </div>
+
+                  <div class="range-wrapper single">
+                    <input type="range" min="0" max="200" value="120" id="distanceRange">
+                    <div class="range-track"></div>
+                  </div>
+                </div>
+
+
+                <!-- More -->
+                <div class="filter-panel" id="more">
+                  <div class="grid-3">
+                    <label><input type="checkbox"> Good for Kids</label>
+                    <label><input type="checkbox"> Dogs Allowed</label>
+                    <label><input type="checkbox"> Outdoor Seating</label>
+                    <label><input type="checkbox"> Alcohol</label>
+                    <label><input type="checkbox"> Breakfast</label>
+                    <label><input type="checkbox"> Instant Book</label>
+                    <label><input type="checkbox"> Smoking Allowed</label>
+                    <label><input type="checkbox"> Free WiFi</label>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- RESULT BAR -->
+            <div class="d-flex justify-content-between align-items-center mb-4 fw-semibold position-relative">
+              <span>106 Listings Found</span>
+
+              <div class="sort-wrapper">
+                <button class="sort-btn">
+                  Short Listings
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="sort-dropdown">
+                  <ul>
+                    <li class="active">Default Order</li>
+                    <li>Highest Rated</li>
+                    <li>Most Reviewed</li>
+                    <li>Newest Listings</li>
+                    <li>Oldest Listings</li>
+                    <li>Featured Listings</li>
+                    <li>Most Viewed</li>
+                    <li>Short By A To Z</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div class="d-flex flex-wrap gap-2 mt-3">
-              <button class="btn btn-light btn-sm">Categories</button>
-              <button class="btn btn-light btn-sm">Rating Filter</button>
-              <button class="btn btn-light btn-sm">Price Filter</button>
-              <button class="btn btn-light btn-sm">Distance</button>
-              <button class="btn btn-light btn-sm">More Filter</button>
-            </div>
-          </div>
 
-          <!-- RESULT BAR -->
-          <div class="d-flex justify-content-between align-items-center mb-4 fw-semibold">
-            <span>106 Listings Found</span>
-            <button class="btn btn-outline-secondary btn-sm">Short Listings</button>
-          </div>
+            <!-- CARDS GRID -->
+            <div class="row g-4">
 
-          <!-- CARDS GRID -->
-          <div class="row g-4">
+              <!-- CARD -->
+              <div class="col-xl-6 col-lg-6  col-md-6">
+                <div class="listing-card">
 
-            <!-- CARD -->
-            <div class="col-xl-6 col-lg-6  col-md-6">
-              <div class="listing-card">
-
-                <div class="image-box">
-                  <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035">
-                  <div class="badges">
-                    <span class="open">OPEN</span>
-                    <span class="price">$$</span>
+                  <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035">
+                    <div class="badges">
+                      <span class="open">OPEN</span>
+                      <span class="price">$$</span>
+                    </div>
+                    <div class="wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
                   </div>
-                  <div class="wishlist">
-                    <i class="fa-regular fa-heart"></i>
+
+                  <div class="profile">
+                    <img src="https://i.pravatar.cc/100?img=15">
                   </div>
+
+                  <div class="content">
+                    <h5 class="title">
+                      Lotus Thai Wellness
+                      <i class="fa-solid fa-circle-check verified"></i>
+                    </h5>
+
+                    <p class="desc">Premium thai massage and body relaxation center.</p>
+
+                    <div class="meta">
+                      <span>
+                        <i class="fa-solid fa-phone phone"></i>
+                        +91 889 223 4567
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-location-dot location"></i>
+                        0.8 miles
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="footer">
+                    <div class="category">
+                      <span class="cat-icon"><i class="fa-solid fa-spa"></i></span>
+                      Wellness
+                    </div>
+                    <div class="rating">
+                      4.5 <small>(54 Reviews)</small>
+                    </div>
+                  </div>
+
                 </div>
-
-                <div class="profile">
-                  <img src="https://i.pravatar.cc/100?img=15">
-                </div>
-
-                <div class="content">
-                  <h5 class="title">
-                    Lotus Thai Wellness
-                    <i class="fa-solid fa-circle-check verified"></i>
-                  </h5>
-
-                  <p class="desc">Premium thai massage and body relaxation center.</p>
-
-                  <div class="meta">
-                    <span>
-                      <i class="fa-solid fa-phone phone"></i>
-                      +91 889 223 4567
-                    </span>
-                    <span>
-                      <i class="fa-solid fa-location-dot location"></i>
-                      0.8 miles
-                    </span>
-                  </div>
-                </div>
-
-                <div class="footer">
-                  <div class="category">
-                    <span class="cat-icon"><i class="fa-solid fa-spa"></i></span>
-                    Wellness
-                  </div>
-                  <div class="rating">
-                    4.5 <small>(54 Reviews)</small>
-                  </div>
-                </div>
-
               </div>
+
+              <div class="col-xl-6 col-lg-6  col-md-6">
+                <div class="listing-card">
+
+                  <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035">
+                    <div class="badges">
+                      <span class="open">OPEN</span>
+                      <span class="price">$$</span>
+                    </div>
+                    <div class="wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="profile">
+                    <img src="https://i.pravatar.cc/100?img=15">
+                  </div>
+
+                  <div class="content">
+                    <h5 class="title">
+                      Lotus Thai Wellness
+                      <i class="fa-solid fa-circle-check verified"></i>
+                    </h5>
+
+                    <p class="desc">Premium thai massage and body relaxation center.</p>
+
+                    <div class="meta">
+                      <span>
+                        <i class="fa-solid fa-phone phone"></i>
+                        +91 889 223 4567
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-location-dot location"></i>
+                        0.8 miles
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="footer">
+                    <div class="category">
+                      <span class="cat-icon"><i class="fa-solid fa-spa"></i></span>
+                      Wellness
+                    </div>
+                    <div class="rating">
+                      4.5 <small>(54 Reviews)</small>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-6  col-md-6">
+                <div class="listing-card">
+
+                  <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035">
+                    <div class="badges">
+                      <span class="open">OPEN</span>
+                      <span class="price">$$</span>
+                    </div>
+                    <div class="wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+
+                  <div class="profile">
+                    <img src="https://i.pravatar.cc/100?img=15">
+                  </div>
+
+                  <div class="content">
+                    <h5 class="title">
+                      Lotus Thai Wellness
+                      <i class="fa-solid fa-circle-check verified"></i>
+                    </h5>
+
+                    <p class="desc">Premium thai massage and body relaxation center.</p>
+
+                    <div class="meta">
+                      <span>
+                        <i class="fa-solid fa-phone phone"></i>
+                        +91 889 223 4567
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-location-dot location"></i>
+                        0.8 miles
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="footer">
+                    <div class="category">
+                      <span class="cat-icon"><i class="fa-solid fa-spa"></i></span>
+                      Wellness
+                    </div>
+                    <div class="rating">
+                      4.5 <small>(54 Reviews)</small>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- DUPLICATE col-xl-3 FOR MORE CARDS -->
+
             </div>
 
-            <!-- DUPLICATE col-xl-3 FOR MORE CARDS -->
-
           </div>
-
         </div>
-      </div>
 
-      <!-- RIGHT SIDE MAP -->
-      <div class="col-lg-5 map-side">
-        <iframe
-          src="https://maps.google.com/maps?q=new%20york&t=&z=11&ie=UTF8&iwloc=&output=embed">
-        </iframe>
-      </div>
+        <!-- RIGHT SIDE MAP -->
+        <div class="col-lg-5 map-side">
+          <iframe src="https://maps.google.com/maps?q=new%20york&t=&z=11&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+        </div>
 
+      </div>
     </div>
+
+  </section>
+
   </div>
 
-</section>
 
 
 
+  <script>
+    const sortBtn = document.querySelector(".sort-btn");
+    const sortDropdown = document.querySelector(".sort-dropdown");
+    const sortItems = document.querySelectorAll(".sort-dropdown li");
+
+    sortBtn.addEventListener("click", () => {
+      sortBtn.classList.toggle("active");
+      sortDropdown.classList.toggle("show");
+    });
+
+    sortItems.forEach(item => {
+      item.addEventListener("click", () => {
+        sortItems.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+
+        sortBtn.firstChild.textContent = item.textContent;
+        sortBtn.classList.remove("active");
+        sortDropdown.classList.remove("show");
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener("click", e => {
+      if (!e.target.closest(".sort-wrapper")) {
+        sortBtn.classList.remove("active");
+        sortDropdown.classList.remove("show");
+      }
+    });
+  </script>
+
+
+
+  <script>
+    const minRange = document.getElementById("priceMin");
+    const maxRange = document.getElementById("priceMax");
+    const minPrice = document.getElementById("minPrice");
+    const maxPrice = document.getElementById("maxPrice");
+
+    minRange.oninput = () => {
+      if (+minRange.value > +maxRange.value - 10) {
+        minRange.value = maxRange.value - 10;
+      }
+      minPrice.innerText = `$${minRange.value}`;
+    };
+
+    maxRange.oninput = () => {
+      if (+maxRange.value < +minRange.value + 10) {
+        maxRange.value = +minRange.value + 10;
+      }
+      maxPrice.innerText = `$${maxRange.value}`;
+    };
+
+    // Distance
+    const distance = document.getElementById("distanceRange");
+    const distanceValue = document.getElementById("distanceValue");
+
+    distance.oninput = () => {
+      distanceValue.innerText = `${distance.value} km`;
+    };
+  </script>
+
+
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const panels = document.querySelectorAll(".filter-panel");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.filter;
+        const panel = document.getElementById(target);
+        const isOpen = panel.classList.contains("show");
+
+        buttons.forEach(b => b.classList.remove("active"));
+        panels.forEach(p => p.classList.remove("show"));
+
+        if (!isOpen) {
+          btn.classList.add("active");
+          panel.classList.add("show");
+        }
+      });
+    });
+  </script>
 
 
 

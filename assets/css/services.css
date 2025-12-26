@@ -1,5 +1,5 @@
 :root {
-  --navbar-height: 80px;
+  --navbar-height: 70px;
 }
 
 /* ================= SECTION ================= */
@@ -71,15 +71,298 @@
   }
 
   /* ================= RESULT BAR ================= */
-  .result-bar {
-    margin-bottom: 24px;
-    font-weight: 600;
+  /* =========================
+   FILTER BAR
+========================= */
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    position: relative;
 
-    .btn {
-      font-size: 13px;
-      border-radius: 999px;
+    .filter-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid #e5e7eb;
+      background: #f8fafc;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      &:hover {
+        background: #f1f5f9;
+      }
+
+      i {
+        font-size: 12px;
+        padding-left: 8px;
+        transition: transform 0.25s ease;
+      }
+
+      &.active {
+        background: #fde2e2;
+        color: #dc2626;
+        border-color: #fecaca;
+
+        i {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
+
+
+  .filter-panels {
+    margin-top: 14px;
+
+    .filter-panel {
+      display: none;
+      background: #fff;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+
+      &.show {
+        display: block;
+      }
+
+      h6 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 14px;
+      }
+
+      /* =========================
+       GRID (Categories / More)
+    ========================= */
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px 24px;
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 14px;
+          cursor: pointer;
+          user-select: none;
+
+          input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            appearance: none;
+            border: 1.5px solid #ddd;
+            position: relative;
+            transition: all 0.2s ease;
+
+            &:checked {
+              background: #dc2626;
+              border-color: #dc2626;
+            }
+          }
+        }
+      }
+
+      /* =========================
+       RATING FILTER
+    ========================= */
+      .rating-group {
+        display: flex;
+        gap: 10px;
+
+        .rating {
+          flex: 1;
+          padding: 12px;
+          border: 1px solid #eee;
+          background: #fff;
+          border-radius: 8px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.25s ease;
+
+          &:hover {
+            background: #f8fafc;
+          }
+
+          &.active {
+            background: #dc2626;
+            color: #fff;
+            border-color: #dc2626;
+          }
+        }
+      }
+
+      .range-wrapper {
+        position: relative;
+        height: 36px;
+        margin-top: 8px;
+
+        input[type="range"] {
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          appearance: none;
+          background: transparent;
+          pointer-events: none;
+
+          &::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #dc2626;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            pointer-events: auto;
+          }
+
+          &::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #dc2626;
+            border: 3px solid #fff;
+            cursor: pointer;
+          }
+        }
+
+        .range-track {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 4px;
+          width: 100%;
+          background: #e5e7eb;
+          border-radius: 2px;
+        }
+
+        &.single {
+          input {
+            pointer-events: auto;
+          }
+        }
+      }
+
+      .range-values {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 6px;
+        color: #111827;
+
+        &.center {
+          justify-content: center;
+          font-weight: 600;
+        }
+      }
+
+      input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        border-radius: 5px;
+        appearance: none;
+        border: 1.5px solid #d1d5db;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:checked {
+          background: #dc2626;
+          border-color: #dc2626;
+
+          &::after {
+            content: "✓";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -58%);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .sort-wrapper {
+    position: relative;
+
+    .sort-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid #fecaca;
+      background: #fff;
+      color: #dc2626;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+
+      i {
+        font-size: 12px;
+        transition: transform 0.25s ease;
+      }
+
+      &.active {
+        background: #fde2e2;
+
+        i {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .sort-dropdown {
+      position: absolute;
+      right: 0;
+      top: 120%;
+      width: 220px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      display: none;
+      z-index: 100;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 8px 0;
+
+        li {
+          padding: 10px 16px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          &:hover {
+            background: #f9fafb;
+          }
+
+          &.active {
+            background: #dc2626;
+            color: #fff;
+          }
+        }
+      }
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+
 
   /* ================= CARD ================= */
   .listing-card {
@@ -275,16 +558,7 @@
       border: none;
     }
   }
-
-  /* ================= RESPONSIVE ================= */
-  @media (max-width: 991px) {
-    height: auto;
-    margin-top: 0;
-
-    .map-side {
-      position: relative;
-      height: 350px;
-      top: 0;
-    }
-  }
 }
+
+
+

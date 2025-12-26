@@ -142,3 +142,45 @@ document.querySelectorAll(".carousel-wrapper").forEach(wrapper => {
 
 
 
+
+// -----------otp-------------
+// OPEN OTP MODAL
+function openOtp() {
+  const modal = document.querySelector('.otp-overlay');
+  modal.classList.add('show');
+
+  // focus first OTP box
+  const firstInput = modal.querySelector('.otp-inputs input');
+  if (firstInput) firstInput.focus();
+}
+
+// CLOSE OTP WHEN CLICKING OUTSIDE
+document.querySelector('.otp-overlay').addEventListener('click', function (e) {
+  if (e.target === this) {
+    this.classList.remove('show');
+  }
+});
+
+// OTP AUTO MOVE + BACKSPACE
+const otpInputs = document.querySelectorAll('.otp-inputs input');
+
+otpInputs.forEach((input, index) => {
+  input.addEventListener('input', () => {
+    if (input.value && index < otpInputs.length - 1) {
+      otpInputs[index + 1].focus();
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace' && !input.value && index > 0) {
+      otpInputs[index - 1].focus();
+    }
+  });
+});
+
+// ESC KEY CLOSE
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelector('.otp-overlay').classList.remove('show');
+  }
+});
